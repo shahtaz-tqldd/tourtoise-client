@@ -7,8 +7,8 @@ const HomeStories = () => {
         <div className="hero my-12">
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <figure className='lg:w-1/2 flex justify-center relative'>
-                    <img src={tour} className="w-64 h-64 object-cover rounded-md mt-16" />
-                    <img src={adventure} className="w-64 h-64 object-cover rounded-md -ml-24 shadow-lg" />
+                    <img src={tour} alt="moment" className="w-64 h-64 object-cover rounded-md mt-16" />
+                    <img src={adventure} alt="moment" className="w-64 h-64 object-cover rounded-md -ml-24 shadow-lg" />
                 </figure>
                 <div className='lg:w-1/2'>
                     <h1 className="text-5xl font-bold">Share Your Moment</h1>

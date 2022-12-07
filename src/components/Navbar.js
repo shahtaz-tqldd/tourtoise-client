@@ -9,7 +9,7 @@ const Navbar = () => {
     <li><Link to='/groups'>Groups</Link></li>
   </>
   return (
-    <div className='bg-base-100 shadow-lg'>
+    <div className='bg-base-100 shadow-lg sticky top-0 z-10 opacity-95'>
       <div className="navbar lg:max-w-[80%] mx-auto">
         <div className="navbar-start">
           <div className="dropdown">

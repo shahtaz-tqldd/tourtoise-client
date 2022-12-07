@@ -6,7 +6,7 @@ const PlaceCard = ({ place }) => {
         <div className="card shadow-2xl h-[400px]"
             style={{ backgroundImage: `url(${image})`, backgroundSize: "cover", backgroundPosition: "center" }}>
             <div className="mt-auto ml-4 mb-6 text-white">
-                <h2 className="text-3xl font-bold">{placeName}</h2>
+                <h2 className="text-3xl font-bold font-poppins">{placeName}</h2>
                 <p>{address}</p>
             </div>
         </div>
