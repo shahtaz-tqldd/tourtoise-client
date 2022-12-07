@@ -3,10 +3,10 @@ import { BsFillPeopleFill } from 'react-icons/bs'
 import { FiCalendar } from 'react-icons/fi'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { Link } from 'react-router-dom'
-import luggage from '../../../../assets/images/luggage.png'
+import luggage from '../../../assets/images/luggage.png'
 
 const GroupCard = ({ group }) => {
-    const { title, startDate, returnDate, person } = group
+    const { title, startDate, returnDate, person, id } = group
     return (
         <div className="bg-[#E97777] shadow-lg rounded-lg">
             <div className="p-[10px]">
@@ -18,7 +18,7 @@ const GroupCard = ({ group }) => {
                     <FiCalendar />&nbsp;<span>{startDate}</span> &emsp;<HiArrowNarrowRight/>&emsp; <span>{returnDate}</span>
                 </div>
                 <p className='text-white flex items-center'><BsFillPeopleFill/> &nbsp;{person} Person</p>
-                <Link to='/' className='flex justify-end'><button className="btn btn-[#CE7777] btn-outline btn-sm normal-case rounded-full mt-4">Join Group</button></Link>
+                <Link to={`/tour-groups/${id}`} className='flex justify-end'><button className="btn btn-[#CE7777] btn-outline btn-sm normal-case rounded-full mt-4">Join Group</button></Link>
             </div>
         </div>
     )

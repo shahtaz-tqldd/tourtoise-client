@@ -1,5 +1,5 @@
 import React from 'react'
-import PlaceCard from './PlaceCard'
+import PlaceCard from '../../Places/components/PlaceCard'
 import { BsArrowRight } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 const SearchPlace = () => {
@@ -32,7 +32,7 @@ const SearchPlace = () => {
                     <input type="text" placeholder="Type place name" className="input input-bordered w-64 focus:outline-none" />
                     <button className="btn btn-primary -ml-4 ">Search</button>
                 </form>
-                <Link to='/' className='flex items-center text-lg mt-8 text-primary font-bold hover:text-secondary transition duration-300'>See All Places &nbsp;<BsArrowRight /></Link>
+                <Link to='/places' className='flex items-center text-lg mt-8 text-primary font-bold hover:text-secondary transition duration-300'>See All Places &nbsp;<BsArrowRight /></Link>
             </div>
         </div>
     )

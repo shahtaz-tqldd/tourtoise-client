@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const menuItems = <>
-    <li><Link to='/'>Home</Link></li>
     <li><Link to='/places'>Tour Place</Link></li>
     <li><Link to='/blogs'>Tour Blogs</Link></li>
-    <li><Link to='/groups'>Groups</Link></li>
+    <li><Link to='/tour-groups'>Tour Groups</Link></li>
+    <li><Link to='/moments'>Moments</Link></li>
   </>
   return (
     <div className='bg-base-100 shadow-lg sticky top-0 z-10 opacity-95'>

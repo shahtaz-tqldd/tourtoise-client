@@ -1,9 +1,10 @@
 import React from 'react'
-import { BsArrowRight } from 'react-icons/bs'
-import { Link } from 'react-router-dom'
-import BlogCard from '../../Blogs/components/BlogCard'
+import useTitle from '../../hooks/useTitle'
+import BlogCard from './components/BlogCard'
+import tourObject from '../../assets/images/tourObject2.png'
 
-const HomeBlogs = () => {
+const Blogs = () => {
+    useTitle('Blogs')
     const blogs = [
         {
             "id": 1,
@@ -27,18 +28,31 @@ const HomeBlogs = () => {
             "author": "Sobuj Ahmed",
         },
     ]
-  return (
-      <div>
-          <h1 className='text-3xl font-bold text-center mb-2'>Read Tour Blogs</h1>
-          <p className='text-center mb-12'>Read your favourite blogs from professional tourist</p>
-          <div className='grid lg:grid-cols-3 gap-6'>
+    return (
+        <section className='lg:max-w-[80%] mx-auto px-5'>
+
+            {/* Heading of the Blog Page */}
+
+            <div className='flex items-center lg:flex-row md:flex-row flex-col mb-6 mt-12'>
+                <img src={tourObject} alt="" className='lg:h-36 md:h-24 h-16' />
+                <div>
+                    <h2 className='text-2xl font-bold font-poppins mb-4'>Search Blogs</h2>
+                    <form className='flex items-center'>
+                        <input type="text" placeholder="Type Keyword" className="input input-bordered w-64 focus:outline-none" />
+                        <button className="btn btn-primary -ml-4 ">Search</button>
+                    </form>
+                </div>
+            </div>
+
+            {/* Blog Cards */}
+
+            <div className='grid lg:grid-cols-3 gap-6'>
               {
                   blogs.map(blog => <BlogCard key={blog.id} blog={blog} />)
               }
           </div>
-          <Link to='/' className='flex items-center justify-end text-lg mt-12 text-primary font-bold hover:text-secondary transition duration-300'>Read More &nbsp;<BsArrowRight /></Link>
-    </div>
-  )
+        </section>
+    )
 }
 
-export default HomeBlogs
+export default Blogs

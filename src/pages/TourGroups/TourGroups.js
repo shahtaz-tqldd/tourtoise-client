@@ -1,9 +1,18 @@
 import React from 'react'
-import { BsArrowRight } from 'react-icons/bs'
-import { Link } from 'react-router-dom'
-import GroupCard from './GroupCard'
+import SearchBar from '../../components/SearchBar'
+import useTitle from '../../hooks/useTitle'
+import GroupSideBanner from './components/GroupSideBanner'
+import groupImg from '../../assets/images/tourObject.png'
+import GroupCard from './components/GroupCard'
 
-const HomeGroups = () => {
+
+const TourGroups = () => {
+    useTitle('Tour Groups')
+    const searchBar = {
+        image: groupImg,
+        text: "Search Group with Place name",
+        pHolder: "Where do you want to go"
+    }
     const groups = [
         {
             "id": 1,
@@ -39,19 +48,22 @@ const HomeGroups = () => {
         }
     ]
     return (
-        <div className='flex mt-24'>
-            <div className='lg:w-1/2 grid lg:grid-cols-2 gap-4'>
-                {
-                    groups.map(group => <GroupCard key={group.id} group={group} />)
-                }
+        <section className='lg:max-w-[80%] mx-auto px-5 flex lg:flex-row flex-col mt-12'>
+            <div className='lg:w-1/3'>
+                <GroupSideBanner />
             </div>
-            <div className='lg:w-1/2 flex flex-col items-center mt-16'>
-                <h1 className='text-4xl font-bold mb-2'>Join a Tour Group</h1>
-                <p className='w-2/3'>Search Tour Place you want to go, Browse your favourite place and find every possible details you want to know</p>
-                <Link to='/' className='flex items-center text-lg mt-8 text-primary font-bold hover:text-secondary transition duration-300'>See All Groups &nbsp;<BsArrowRight /></Link>
+            <div className='lg:w-2/3 px-6'>
+                <SearchBar searchBar={searchBar} />
+                
+                {/* group card */}
+                <div className='grid lg:grid-cols-2 gap-4 mt-16'>
+                    {
+                        groups.map(group => <GroupCard key={group.id} group={group} />)
+                    }
+                </div>
             </div>
-        </div>
+        </section>
     )
 }
 
-export default HomeGroups
+export default TourGroups
