@@ -9,11 +9,13 @@ const Moments = () => {
     }
     return (
         <section className='lg:max-w-[80%] mx-auto mt-8 px-5 flex lg:flex-row flex-col'>
-            <div className='lg:fixed'>
+            
+            <div className='lg:fixed lg:w-[27%]'>
                 <img src={moment} alt='moment' className='h-[200px] w-[320px] object-cover rounded-lg' />
                 <h2 className='text-4xl font-bold mt-4'>Moments</h2>
                 <p className='text-lg'>Shared by People</p>
             </div>
+            
             <div className='lg:w-[45%] lg:ml-[320px]'>
                 <div className='bg-white px-6 mx-6 py-4 rounded-lg'>
                     {/* author */}
@@ -46,12 +48,14 @@ const Moments = () => {
                 </div>
             </div>
 
-            <div className='lg:w-[28%] lg:fixed lg:right-16'>
-                <h2 className='text-2xl font-bold mb-4'>Share Your Moment</h2>
-                <form>
-                    <textarea className="textarea w-full h-32" placeholder="Bio"></textarea>
+            <div className='lg:w-[28%] lg:fixed lg:left-[72%]'>
+                <h2 className='text-xl font-bold mb-4 font-poppins'>Do you have anything <br/>to share with your community?</h2>
+                <button className="btn btn-primary btn-sm text-white normal-case rounded">Share Moment +</button>
+                
+                {/* <form>
+                    <textarea className="textarea w-full h-32" placeholder="Write Your Moment"></textarea>
                     <button className='btn btn-sm btn-primary rounded-sm mt-3 text-white normal-case'>Post</button>
-                </form>
+                </form> */}
             </div>
 
         </section>

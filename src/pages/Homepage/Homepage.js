@@ -12,13 +12,19 @@ const Homepage = () => {
     useTitle('Homepage')
     return (
         <>
-            <TopBanner />
-            <section className='lg:max-w-[80%] mx-auto'><SearchPlace/></section>
+            <section className='lg:max-w-[80%] mx-auto'>
+                <TopBanner />
+                <SearchPlace />
+            </section>
+            
             <MidBanner />
-            <section className='lg:max-w-[80%] mx-auto'><HomeBlogs /></section>
-            <HomeStories />
-            <section className='lg:max-w-[80%] mx-auto'><HomeGroups /></section>
-            <section className='lg:max-w-[80%] mx-auto'><PeopleTalks /></section>
+            
+            <section className='lg:max-w-[80%] mx-auto'>
+                <HomeBlogs />
+                <HomeStories />
+                <HomeGroups />
+                <PeopleTalks />
+            </section>
         </>
     )
 }

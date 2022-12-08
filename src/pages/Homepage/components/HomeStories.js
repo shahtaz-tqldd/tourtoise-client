@@ -15,7 +15,7 @@ const HomeStories = () => {
                     <h1 className="text-5xl font-bold">Share Your Moment</h1>
                     <p className="py-6">Share your marvellous adventure or just memorable tour story with others. Read from people experiences and get ideas</p>
                     <div>
-                    <button className="btn btn-primary btn-sm text-white normal-case rounded">Write Moment +</button>
+                    <button className="btn btn-primary btn-sm text-white normal-case rounded">Share Moment +</button>
                     <Link to='/moments'><button className="btn btn-primary btn-sm btn-outline normal-case rounded ml-4">Read From People</button></Link>
                     </div>
                 </div>
