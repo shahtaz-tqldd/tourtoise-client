@@ -4,6 +4,8 @@ import Errorpage from "../pages/404/Errorpage";
 import BlogDetails from "../pages/Blogs/BlogDetails";
 import Blogs from "../pages/Blogs/Blogs";
 import Homepage from "../pages/Homepage/Homepage";
+import Login from "../pages/LoginRegister/Login";
+import Register from "../pages/LoginRegister/Register";
 import Moments from "../pages/Moments/Moments";
 import PlaceDetails from "../pages/PlaceDetails/PlaceDetails";
 import Places from "../pages/Places/Places";
@@ -46,6 +48,14 @@ export const routes = createBrowserRouter([
             {
                 path: '/moments',
                 element: <Moments/>
+            },
+            {
+                path: '/login',
+                element: <Login/>
+            },
+            {
+                path: '/sign-up',
+                element: <Register/>
             },
             {
                 path: '*',
