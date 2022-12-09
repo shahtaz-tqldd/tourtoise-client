@@ -7,7 +7,7 @@ const TopSearchBar = () => {
             <div className='flex items-center lg:flex-row md:flex-row flex-col mb-6'>
                 <img src={tourObject} alt="" className='lg:h-36 md:h-24 h-16' />
                 <div>
-                    <h2 className='text-2xl font-bold font-poppins mb-4'>Search Tour Places</h2>
+                    <h2 className='text-2xl font-bold  mb-4'>Search Tour Places</h2>
                     <form className='flex items-center'>
                         <input type="text" placeholder="Type place name" className="input input-bordered w-64 focus:outline-none" />
                         <button className="btn btn-primary -ml-4 ">Search</button>

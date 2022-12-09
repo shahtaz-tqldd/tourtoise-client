@@ -21,7 +21,7 @@ const Navbar = () => {
               {menuItems}
             </ul>
           </div>
-          <Link to='/' className="flex items-center font-bold font-poppins text-success transition duration-300 text-xl">
+          <Link to='/' className="flex items-center font-bold  text-success transition duration-300 text-xl">
             <img src={logo} alt="tourtoise" className='h-12' />
             Tourtoise
           </Link>

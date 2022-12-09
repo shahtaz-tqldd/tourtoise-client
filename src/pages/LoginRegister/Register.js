@@ -3,6 +3,7 @@ import { MdLock, MdEmail, MdPhotoCamera } from 'react-icons/md'
 import { HiUser } from 'react-icons/hi'
 import { Link } from 'react-router-dom'
 import GoogleLogin from './GoogleLogin'
+import './style.css'
 
 const Register = () => {
   return (
@@ -17,7 +18,7 @@ const Register = () => {
             <input type="email" placeholder="Your Email" className="input input-bordered w-full max-w-xs rounded-full bg-[#fff6e7] focus:outline-none focus:bg-[#cdfffb]" />
           </span>
           <span className='flex items-center mb-2'><MdPhotoCamera className='text-2xl mr-2' />
-            <input type="file" className="my-3" />
+            <input type="file" className="my-2" />
           </span>
           <span className='flex items-center mb-2'><MdLock className='text-2xl mr-2' />
             <input type="password" placeholder="Password" className="input input-bordered w-full max-w-xs rounded-full bg-[#fff6e7] focus:outline-none focus:bg-[#cdfffb]" />
@@ -29,7 +30,7 @@ const Register = () => {
         </form>
         <div className="divider">OR</div>
         <GoogleLogin />
-        <p className='font-bold'>Already have an Account? <Link to='/login' className='text-primary'>Login Here</Link></p>
+        <p className='font-bold'>Already have an Account? <Link to='/login' className='text-success'>Login Here</Link></p>
       </div>
     </section>
   )

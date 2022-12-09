@@ -1,6 +1,7 @@
 import React from 'react'
 import moment from '../../assets/images/moment.png'
 import {MdFavorite} from 'react-icons/md'
+import ShareMomentModal from './components/ShareMomentModal'
 const Moments = () => {
     const blog =
     {
@@ -49,13 +50,9 @@ const Moments = () => {
             </div>
 
             <div className='lg:w-[28%] lg:fixed lg:left-[72%]'>
-                <h2 className='text-xl font-bold mb-4 font-poppins'>Do you have anything <br/>to share with your community?</h2>
-                <button className="btn btn-primary btn-sm text-white normal-case rounded">Share Moment +</button>
-                
-                {/* <form>
-                    <textarea className="textarea w-full h-32" placeholder="Write Your Moment"></textarea>
-                    <button className='btn btn-sm btn-primary rounded-sm mt-3 text-white normal-case'>Post</button>
-                </form> */}
+                <h2 className='text-xl font-bold mb-4 '>Do you have anything <br/>to share with your community?</h2>
+                <label htmlFor='shareMoment-modal' className="btn btn-primary btn-sm text-white normal-case rounded">Share Moment +</label>
+                <ShareMomentModal/>
             </div>
 
         </section>

@@ -10,7 +10,7 @@ const PlaceCard = ({ place }) => {
                 <div className="card h-[400px] hover:scale-105 transition duration-300"
                     style={{ backgroundImage: `url(${image})`, backgroundSize: "cover", backgroundPosition: "center" }}>
                     <div className="mt-auto ml-4 mb-6 text-white">
-                        <h2 className="text-3xl font-bold font-poppins">{placeName}</h2>
+                        <h2 className="text-3xl font-bold ">{placeName}</h2>
                         <p className='flex items-center'><MdLocationOn />&nbsp;{address}</p>
                     </div>
                 </div>

@@ -45,12 +45,12 @@ const MidBanner = () => {
             <div className="hero-content flex-col lg:flex-row">
                 <figure className='lg:w-1/2'><img src={midbanner} alt="why tourtoise" className="" /></figure>
                 <div className='lg:w-1/2'>
-                    <h1 className="text-5xl font-bold font-poppins">Why Tourtoise</h1>
+                    <h1 className="text-5xl font-bold ">Why Tourtoise</h1>
                     <div className='grid grid-cols-2 gap-4 mt-12'>
                         {
                             bannerText.map(text => {
                                 return (
-                                    <div key={text.id} className='flex items-center h-24 bg-white px-3 py-4 rounded-lg font-poppins border-b-4 border-primary'>
+                                    <div key={text.id} className='flex items-center h-24 bg-white px-3 py-4 rounded-lg  border-b-4 border-primary'>
                                         <img src={text.icon} alt="tour object" className='h-12'/>
                                         <p className='ml-2 font-bold'>{ text.text}</p>
                                     </div>

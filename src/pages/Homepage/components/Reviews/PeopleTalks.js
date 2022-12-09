@@ -1,6 +1,7 @@
 import React from 'react'
 import TalksCard from './TalksCard'
 import { MdOutlineMarkChatUnread} from 'react-icons/md'
+import ReviewModal from './ReviewModal'
 
 const PeopleTalks = () => {
     const reviews = [
@@ -35,7 +36,8 @@ const PeopleTalks = () => {
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1'>
                 {reviews.map(review => <TalksCard key={review.id} review={review} />)}
             </div>
-            <h2 className='mt-12 text-lg flex justify-end items-center text-primary'><MdOutlineMarkChatUnread className='pt-1 text-3xl'/>&nbsp;Talk about tourtoise</h2>
+            <label htmlFor='review-modal' className='mt-12 text-lg flex justify-end items-center text-primary cursor-pointer'><MdOutlineMarkChatUnread className='pt-1 text-3xl'/>&nbsp;Talk about tourtoise</label>
+            <ReviewModal/>
         </div>
     )
 }

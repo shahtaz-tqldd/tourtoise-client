@@ -3,6 +3,7 @@ import Main from "../layouts/Main";
 import Errorpage from "../pages/404/Errorpage";
 import BlogDetails from "../pages/Blogs/BlogDetails";
 import Blogs from "../pages/Blogs/Blogs";
+import BookHotels from "../pages/BookHotels/BookHotels";
 import Homepage from "../pages/Homepage/Homepage";
 import Login from "../pages/LoginRegister/Login";
 import Register from "../pages/LoginRegister/Register";
@@ -28,6 +29,10 @@ export const routes = createBrowserRouter([
             {
                 path: '/places/:placeName',
                 element: <PlaceDetails/>
+            },
+            {
+                path: '/hotels',
+                element: <BookHotels/>
             },
             {
                 path: '/blogs',

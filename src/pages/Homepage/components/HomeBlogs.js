@@ -36,7 +36,7 @@ const HomeBlogs = () => {
                   blogs.map(blog => <BlogCard key={blog.id} blog={blog} />)
               }
           </div>
-          <Link to='/' className='flex items-center justify-end text-lg mt-12 text-primary font-bold hover:text-secondary transition duration-300'>Read More &nbsp;<BsArrowRight /></Link>
+          <Link to='/blogs' className='flex items-center justify-end text-lg mt-12 text-primary font-bold hover:text-secondary transition duration-300'>Read More &nbsp;<BsArrowRight /></Link>
     </div>
   )
 }

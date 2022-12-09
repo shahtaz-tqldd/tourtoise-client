@@ -47,7 +47,7 @@ const HomeGroups = () => {
             </div>
             <div className='lg:w-1/2 flex flex-col items-center mt-16'>
                 <h1 className='text-4xl font-bold mb-2'>Join a Tour Group</h1>
-                <p className='w-2/3'>Search Tour Place you want to go, Browse your favourite place and find every possible details you want to know</p>
+                <p className='w-2/3'>You can find people are going together to a place. Why not you join them and find new friends.</p>
                 <Link to='/tour-groups' className='flex items-center text-lg mt-8 text-primary font-bold hover:text-secondary transition duration-300'>See All Groups &nbsp;<BsArrowRight /></Link>
             </div>
         </div>

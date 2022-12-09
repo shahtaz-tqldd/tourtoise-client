@@ -22,7 +22,7 @@ const Login = () => {
         
         <div className="divider">OR</div>
         <GoogleLogin />
-        <p className='font-bold'>Don't have any Account? <Link to='/sign-up' className='text-primary'>Sign Up</Link></p>
+        <p className='font-bold'>Don't have any Account? <Link to='/sign-up' className='text-success'>Sign Up</Link></p>
       </div>
     </section>
   )
