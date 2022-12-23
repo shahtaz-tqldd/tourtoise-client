@@ -6,8 +6,10 @@ import groupImg from '../../assets/images/tourObject.png'
 import GroupCard from './components/GroupCard'
 
 
+
 const TourGroups = () => {
     useTitle('Tour Groups')
+  
     const searchBar = {
         image: groupImg,
         text: "Search Group with Place name",
@@ -48,7 +50,7 @@ const TourGroups = () => {
         }
     ]
     return (
-        <section className='lg:max-w-[80%] mx-auto px-5 flex lg:flex-row flex-col mt-12'>
+        <section className='lg:max-w-[1250px] mx-auto px-5 flex lg:flex-row flex-col mt-12'>
             <div className='lg:w-1/3'>
                 <GroupSideBanner />
             </div>

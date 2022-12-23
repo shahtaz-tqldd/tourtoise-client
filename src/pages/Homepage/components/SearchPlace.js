@@ -18,7 +18,7 @@ const SearchPlace = () => {
         },
     ]
     return (
-        <div className='flex mt-24'>
+        <div className='flex mt-20'>
             <div className='lg:w-1/2 grid lg:grid-cols-2 gap-6'>
                 {
                     tourPlaces.map(p => <PlaceCard key={p.id} place={p} />)

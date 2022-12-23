@@ -1,9 +1,27 @@
-import React from 'react'
-import google from '../../assets/icons/google.png'
+import React, { useContext } from 'react'
+import { toast } from 'react-hot-toast'
+import { FcGoogle } from 'react-icons/fc'
+import { useLocation, useNavigate } from 'react-router-dom'
+import { AuthContext } from '../../context/AuthProvider'
 const GoogleLogin = () => {
+  const { googleLogin } = useContext(AuthContext)
+  const navigate = useNavigate()
+  const location = useLocation()
+  const from = location.state?.from?.pathname || '/'
+  const handleGoogleLogin = () => {
+    googleLogin()
+      .then(result => {
+        console.log(result.user)
+        toast.success("Login with google successfull!")
+        navigate(from, { replace: true })
+      })
+      .catch(err => console.error(err))
+  }
   return (
-      <button className='btn btn-outline btn-primary w-full normal-case rounded-md mt-3 mb-4'>
-          <img src={ google} alt="google logo" className='h-6' /> &nbsp; Continue with Google</button>
+    <button onClick={handleGoogleLogin} className='btn btn-outline btn-primary w-full normal-case rounded-md mt-3 mb-4'>
+      <FcGoogle /> &nbsp;
+      Continue with Google
+    </button>
   )
 }
 

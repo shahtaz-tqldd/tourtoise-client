@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 import useTitle from '../../hooks/useTitle'
 import Activities from './components/Activities'
 import Description from './components/Description'
@@ -11,8 +12,9 @@ import WhereToStay from './components/WhereToStay'
 
 const PlaceDetails = () => {
     useTitle('Sajek Valley')
+  
     return (
-        <section className='lg:max-w-[80%] mx-auto px-5'>
+        <section className='lg:max-w-[1250px] mx-auto px-5'>
             <PlaceHead />
             <div className='flex mt-12 gap-6'>
                 <div className='lg:w-2/3'>

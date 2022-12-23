@@ -2,14 +2,17 @@ import React from 'react'
 import moment from '../../assets/images/moment.png'
 import {MdFavorite} from 'react-icons/md'
 import ShareMomentModal from './components/ShareMomentModal'
+import useTitle from '../../hooks/useTitle'
+
 const Moments = () => {
+    useTitle('Moment')
     const blog =
     {
         "author": "Rahim Ibrahim",
         "authorImg": "https://news.berkeley.edu/wp-content/uploads/2022/11/Alex-Dimitrov-750.jpg"
     }
     return (
-        <section className='lg:max-w-[80%] mx-auto mt-8 px-5 flex lg:flex-row flex-col'>
+        <section className='lg:max-w-[1250px] mx-auto mt-8 px-5 flex lg:flex-row flex-col'>
             
             <div className='lg:fixed lg:w-[27%]'>
                 <img src={moment} alt='moment' className='h-[200px] w-[320px] object-cover rounded-lg' />

@@ -2,9 +2,13 @@ import React from 'react'
 import { HiLink, HiOutlineArrowNarrowLeft } from 'react-icons/hi'
 import { MdOutlineFavorite, MdOutlineSaveAlt } from 'react-icons/md'
 import { Link } from 'react-router-dom'
+
+import useTitle from '../../hooks/useTitle'
 import Comments from './components/Comments'
 
 const BlogDetails = () => {
+    useTitle('Sajek Valley')
+  
     const blog =
     {
         "author": "Rahim Ibrahim",
@@ -12,7 +16,7 @@ const BlogDetails = () => {
     }
 
     return (
-        <section className='lg:max-w-[80%] mx-auto px-5'>
+        <section className='lg:max-w-[1250px] mx-auto px-5'>
             <div className='flex mt-4'>
                 <div className='lg:w-2/3'>
                     <Link to='/blogs' className='flex items-center text-lg my-4'> <HiOutlineArrowNarrowLeft /> &nbsp; Go Back</Link>

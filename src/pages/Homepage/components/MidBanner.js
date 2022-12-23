@@ -50,7 +50,7 @@ const MidBanner = () => {
                         {
                             bannerText.map(text => {
                                 return (
-                                    <div key={text.id} className='flex items-center h-24 bg-white px-3 py-4 rounded-lg  border-b-4 border-primary'>
+                                    <div key={text.id} className='flex items-center h-24 bg-white px-3 py-4 rounded-lg  border-t-4 border-error'>
                                         <img src={text.icon} alt="tour object" className='h-12'/>
                                         <p className='ml-2 font-bold'>{ text.text}</p>
                                     </div>

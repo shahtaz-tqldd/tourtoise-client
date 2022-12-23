@@ -4,6 +4,8 @@ import Errorpage from "../pages/404/Errorpage";
 import BlogDetails from "../pages/Blogs/BlogDetails";
 import Blogs from "../pages/Blogs/Blogs";
 import BookHotels from "../pages/BookHotels/BookHotels";
+import HotelBookingForm from "../pages/BookHotels/Hotels/HotelBookingForm";
+import Hotels from "../pages/BookHotels/Hotels/Hotels";
 import Homepage from "../pages/Homepage/Homepage";
 import Login from "../pages/LoginRegister/Login";
 import Register from "../pages/LoginRegister/Register";
@@ -33,6 +35,14 @@ export const routes = createBrowserRouter([
             {
                 path: '/hotels',
                 element: <BookHotels/>
+            },
+            {
+                path: '/hotels/:name',
+                element: <Hotels/>
+            },
+            {
+                path: '/hotels/booking/:name',
+                element: <HotelBookingForm/>
             },
             {
                 path: '/blogs',

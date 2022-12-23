@@ -2,11 +2,15 @@ import React from 'react'
 import { FiCalendar } from 'react-icons/fi'
 import { HiArrowNarrowRight } from 'react-icons/hi'
 import { MdAccessTime, MdLocationOn, MdOutlineControlPoint, MdOutlineDirectionsBusFilled } from 'react-icons/md'
+
+import useTitle from '../../hooks/useTitle'
 import AddNotesModal from './components/AddNotesModal'
 import MemberCard from './components/MemberCard'
 import NotesModal from './components/NotesModal'
 
 const GroupDetails = () => {
+    useTitle('Sundarban Tour')
+  
     const data = {
         title: "Tour to Sundaran",
         startDate: "Nov 07, 2022",
@@ -49,7 +53,7 @@ const GroupDetails = () => {
     }
     const {user, photoURL, comment:body} = comment
     return (
-        <section className='lg:max-w-[80%] mx-auto mt-8 px-5 flex lg:flex-row flex-col gap-3'>
+        <section className='lg:max-w-[1250px] mx-auto mt-8 px-5 flex lg:flex-row flex-col gap-3'>
             <div className='lg:w-[30%] h-full bg-white rounded-lg p-4'>
                 <h1 className='text-3xl font-bold'>{title}</h1>
                 <div className='flex mt-3 text-sm flex items-center'>

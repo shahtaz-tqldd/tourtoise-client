@@ -1,10 +1,12 @@
 import React from 'react'
+
 import useTitle from '../../hooks/useTitle'
 import PlaceCard from './components/PlaceCard'
 import TopSearchBar from './components/TopSearchBar'
 
 const Places = () => {
     useTitle('Tour Places')
+  
     const tourPlaces = [
         {
             "id": 1,
@@ -32,7 +34,7 @@ const Places = () => {
         },
     ]
     return (
-        <section className='lg:max-w-[80%] mx-auto px-5'>
+        <section className='lg:max-w-[1250px] mx-auto px-5'>
             <TopSearchBar />
 
             {/* place cards */}

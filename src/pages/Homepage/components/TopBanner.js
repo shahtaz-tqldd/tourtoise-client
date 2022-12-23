@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import banner from '../../../assets/images/banner.webp'
+import banner from '../../../assets/images/banner.png'
 
 const TopBanner = () => {
     return (

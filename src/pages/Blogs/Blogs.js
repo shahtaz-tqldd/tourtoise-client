@@ -3,8 +3,10 @@ import useTitle from '../../hooks/useTitle'
 import BlogCard from './components/BlogCard'
 import tourObject from '../../assets/images/tourObject2.png'
 
+
 const Blogs = () => {
     useTitle('Blogs')
+  
     const blogs = [
         {
             "id": 1,
@@ -29,7 +31,7 @@ const Blogs = () => {
         },
     ]
     return (
-        <section className='lg:max-w-[80%] mx-auto px-5'>
+        <section className='lg:max-w-[1250px] mx-auto px-5'>
 
             {/* Heading of the Blog Page */}
 
@@ -39,7 +41,7 @@ const Blogs = () => {
                     <h2 className='text-2xl font-bold  mb-4'>Search Blogs</h2>
                     <form className='flex items-center'>
                         <input type="text" placeholder="Type Keyword" className="input input-bordered w-64 focus:outline-none" />
-                        <button className="btn btn-primary -ml-4 ">Search</button>
+                        <button className="btn btn-primary rounded-l-none -ml-4 ">Search</button>
                     </form>
                 </div>
             </div>

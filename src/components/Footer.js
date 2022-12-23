@@ -11,7 +11,7 @@ const Footer = () => {
   </>
   return (
     <div className='bg-base-200 mt-32'>
-      <footer className="footer py-10 text-base-content lg:max-w-[80%] mx-auto">
+      <footer className="footer py-10 text-base-content lg:max-w-[1250px] mx-auto">
         <div>
           <img src={logo} alt="logo" className="h-20 w-20"/>
           <h2 className='text-2xl font-bold'>Tourtoise</h2>
